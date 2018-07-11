@@ -1,0 +1,57 @@
+.button {
+  padding: 0 20px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+.default {
+  color: #fff;
+  background-color: #2a78b0;
+  border: 1px solid #2a78b0;
+  &:hover {
+    background-color: #4b91bd;
+  }
+  &:active {
+    background-color: #1a588a;
+  }
+}
+.disabled {
+  color: #fff;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  cursor: not-allowed;
+}
+.cancel {
+  color: #666666;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  &:hover {
+    color: #4b91bd;
+    border: 1px solid #4b91bd;
+  }
+  &:active {
+    color: #1a588a;
+    border: 1px solid #1a588a;
+  }
+}
+.delete {
+  color: #fff;
+  background-color: #fe2d32;
+  border: 1px solid #fe2d32;
+  &:hover {
+    background-color: #ff5a57;
+    border: 1px solid #ff5a57;
+  }
+  &:active {
+    background-color: #d91c26;
+    border: 1px solid #d91c26;
+  }
+}
+.icon {
+  margin-right: 10px;
+}

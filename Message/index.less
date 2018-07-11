@@ -1,0 +1,40 @@
+.message_warp {
+  position: fixed;
+  z-index: 1010;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  pointer-events: none;
+  > span {
+    > div {
+      z-index: 1011;
+      text-align: center;
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+      > div {
+        position: relative;
+        display: inline-block;
+        max-width: 520px;
+        min-width: 288px;
+        line-height: 1;
+        padding: 18px 24px;
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.7);
+        .message_content {
+          display: table-cell;
+          min-width: 212px;
+        }
+        > i {
+          display: table-cell;
+          color: #f14742;
+          padding-left: 12px;
+          font-weight: bold;
+          cursor: pointer;
+          width: 28px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

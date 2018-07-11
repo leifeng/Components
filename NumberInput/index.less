@@ -1,0 +1,31 @@
+.normal {
+  display: inline-block;
+  height: 32px;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  > a {
+    display: inline-block;
+    width: 35px;
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+    user-select: none;
+  }
+  a[disabled] {
+    color: #ddd;
+    cursor: not-allowed;
+  }
+  > input {
+    width: 44px;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+}
+.plus {
+  border-left: 1px solid #dadada;
+}
+.minus {
+  border-right: 1px solid #dadada;
+}

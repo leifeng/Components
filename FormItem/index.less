@@ -1,0 +1,48 @@
+.normal {
+  position: relative;
+  min-height: 34px;
+}
+.formitem {
+  display: block;
+}
+.label {
+  position: relative;
+  &::before {
+    content: '*';
+    display: block;
+    color: #fe2d32;
+    position: absolute;
+    left: -10px;
+    top: 2px;
+  }
+}
+.desc {
+  color: #999999;
+}
+.require {
+}
+.error {
+  color: #fe2d32;
+}
+.message {
+  font-size: 12px;
+  margin-top: 5px;
+  position: absolute;
+}
+.clear {
+  > label {
+    text-align: left;
+    color: #666;
+    font-size: 14px;
+    float: left;
+    // margin-top: 6px;
+    line-height: 28px;
+  }
+}
+.clear::after {
+  content: ' ';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
